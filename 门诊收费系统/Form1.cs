@@ -47,7 +47,31 @@ namespace 门诊收费系统
                 com.Connection = con;
                 com.CommandText = strcom;
                 SqlDataReader re = com.ExecuteReader();
+                if (re.HasRows & comboBox1.Text.Trim()=="医生")
+                {
+                    //隐藏登录窗口,显示主窗口
+                    new Form2().Show();
+                }
+                else if (re.HasRows & comboBox1.Text.Trim() == "挂号员")
+                {
+                    //隐藏登录窗口,显示主窗口
+                    new Form3().Show();
+                }
+                else if(re.HasRows & comboBox1.Text.Trim() == "系统管理员")
+                {
+                    //隐藏登录窗口,显示主窗口
+                    new Form4().Show();
+                }
+                else
+                {
+                    MessageBox.Show("用户名或者密码不正确！");
+                }
             }
+            else
+            {
+                MessageBox.Show("用户名或者密码不正确！");
+            }
+
         }
        
         private void Form1_Load(object sender, EventArgs e)
