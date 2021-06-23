@@ -147,6 +147,7 @@ namespace 门诊收费系统
             this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "门诊挂号收费系统";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
