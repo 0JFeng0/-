@@ -111,7 +111,7 @@ namespace 门诊收费系统
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(273, 54);
             this.button1.TabIndex = 11;
-            this.button1.Text = "登录";
+            this.button1.Text = "登 录";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -148,6 +148,7 @@ namespace 门诊收费系统
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1064, 602);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox1);
