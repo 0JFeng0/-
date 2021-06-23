@@ -59,5 +59,15 @@ namespace 门诊收费系统.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 屏幕截图_2021_06_22_224425 {
+            get {
+                object obj = ResourceManager.GetObject("屏幕截图 2021-06-22 224425", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

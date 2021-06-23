@@ -16,5 +16,7 @@ namespace 门诊收费系统
         {
             InitializeComponent();
         }
+
+  
     }
 }
