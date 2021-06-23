@@ -55,6 +55,7 @@ namespace 门诊收费系统
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(336, 40);
             this.comboBox1.TabIndex = 5;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // textBox1
             // 
@@ -69,6 +70,7 @@ namespace 门诊收费系统
             this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox2.Location = new System.Drawing.Point(248, 177);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(336, 39);
             this.textBox2.TabIndex = 7;
             // 
@@ -155,6 +157,7 @@ namespace 门诊收费系统
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "门诊挂号收费系统";
+            this.Load += new System.EventHandler(this.Form1_Load_1);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
