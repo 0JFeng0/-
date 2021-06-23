@@ -44,9 +44,14 @@ namespace 门诊收费系统
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(248, 74);
+            this.comboBox1.Items.AddRange(new object[] {
+            "医生",
+            "挂号员",
+            "系统管理员"});
+            this.comboBox1.Location = new System.Drawing.Point(248, 76);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(336, 40);
             this.comboBox1.TabIndex = 5;
