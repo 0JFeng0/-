@@ -18,48 +18,56 @@ namespace 门诊收费系统
             InitializeComponent();
         }
 
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        private void RichTextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void TextBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void Label3_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             string strcon = "server=DESKTOP-NT1HALM; database =门诊挂号收费系统;Integrated security=true";
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = strcon;
+            SqlConnection con = new()
+            {
+                ConnectionString = strcon
+            };
             con.Open();
             if (con.State == ConnectionState.Open)
             {
                 string strcom = "select * from Staff where Logindify='{0}' and Account='{1}' and Password ='{2}'";
                 strcom = string.Format(strcom, comboBox1.Text.Trim(), textBox1.Text.Trim(), textBox2.Text.Trim());
-                SqlCommand com = new SqlCommand();
-                com.Connection = con;
-                com.CommandText = strcom;
+                SqlCommand sqlCommand = new()
+                {
+                    Connection = con,
+                    CommandText = strcom
+                };
+                SqlCommand com = sqlCommand;
                 SqlDataReader re = com.ExecuteReader();
                 if (re.HasRows & comboBox1.Text.Trim()=="医生")
                 {
                     //隐藏登录窗口,显示主窗口
+                    this.Hide();
                     new Form2().Show();
                 }
                 else if (re.HasRows & comboBox1.Text.Trim() == "挂号员")
                 {
                     //隐藏登录窗口,显示主窗口
+                    this.Hide();
                     new Form3().Show();
                 }
                 else if(re.HasRows & comboBox1.Text.Trim() == "系统管理员")
                 {
                     //隐藏登录窗口,显示主窗口
+                    this.Hide();
                     new Form4().Show();
                 }
                 else
@@ -84,7 +92,7 @@ namespace 门诊收费系统
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

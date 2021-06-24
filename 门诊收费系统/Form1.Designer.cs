@@ -55,7 +55,7 @@ namespace 门诊收费系统
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(336, 40);
             this.comboBox1.TabIndex = 5;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
             // textBox1
             // 
@@ -103,7 +103,7 @@ namespace 门诊收费系统
             this.label3.Size = new System.Drawing.Size(114, 32);
             this.label3.TabIndex = 10;
             this.label3.Text = "登陆密码";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.label3.Click += new System.EventHandler(this.Label3_Click);
             // 
             // button1
             // 
@@ -115,7 +115,7 @@ namespace 门诊收费系统
             this.button1.TabIndex = 11;
             this.button1.Text = "登 录";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // label4
             // 

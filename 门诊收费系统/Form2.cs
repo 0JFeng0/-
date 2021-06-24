@@ -16,5 +16,10 @@ namespace 门诊收费系统
         {
             InitializeComponent();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
