@@ -19,7 +19,7 @@ namespace 门诊收费系统
 
         private void 病人诊疗卡管理_Load(object sender, EventArgs e)
         {
-
+            tabControl1.Visible = false;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -33,6 +33,16 @@ namespace 门诊收费系统
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            tabControl1.Visible=true;
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
         {
 
         }

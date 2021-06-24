@@ -41,5 +41,11 @@ namespace 门诊收费系统
         {
            
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            病人诊疗卡管理 z = new 病人诊疗卡管理();
+            z.Show();
+        }
     }
 }
