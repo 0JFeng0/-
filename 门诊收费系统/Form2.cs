@@ -60,13 +60,17 @@ namespace 门诊收费系统
             }
             using (SqlConnection con = new SqlConnection(strcon))
             {
-                string strcmd = "select Pname 患者姓名 ,Dname 诊断医师 患者姓名 ,Sichis 过往病史,Disease 诊断病症," +
+                con.Open();
+                if (con.State == ConnectionState.Open)
+                {
+                    string strcmd = "select Pname 患者姓名 ,Dname 诊断医师 ,Sichis 过往病史,Disease 诊断病症," +
                     "Psiname 药方名称,Diatime 诊断时间  from Diagnosis ";
-                strcmd = string.Format(strcmd, textBox1.Text.Trim(), textBox8.Text.Trim(), textBox7.Text.Trim());
-                SqlDataAdapter da = new SqlDataAdapter(strcmd, con);
-                DataSet ds = new DataSet();
-                da.Fill(ds);
-                dataGridView1.DataSource = ds.Tables[0].DefaultView;
+                    strcmd = string.Format(strcmd, textBox1.Text.Trim(), textBox8.Text.Trim(), textBox7.Text.Trim());
+                    SqlDataAdapter da = new SqlDataAdapter(strcmd, con);
+                    DataSet ds = new DataSet();
+                    da.Fill(ds);
+                    dataGridView1.DataSource = ds.Tables[0].DefaultView;
+                }
             }
             //向处方记录表中插入信息
             using (SqlConnection con = new SqlConnection(strcon))
@@ -83,36 +87,52 @@ namespace 门诊收费系统
             }
             using (SqlConnection con = new SqlConnection(strcon))
             {
-                string strcmd = "select Psiname 药方名称 ,Dname 开方医生 ,Psicontent 药方内容," +
-                    "Diatime 诊断时间, Psicost 价格,  from Prescription";
-                strcmd = string.Format(strcmd, textBox1.Text.Trim(), textBox8.Text.Trim(), textBox7.Text.Trim());
-                SqlDataAdapter da = new SqlDataAdapter(strcmd, con);
-                DataSet ds = new DataSet();
-                da.Fill(ds);
-                dataGridView1.DataSource = ds.Tables[0].DefaultView;
+                con.Open();
+                if (con.State == ConnectionState.Open)
+                {
+                    string strcmd = "select Psiname 药方名称 ,Dname 开方医生 ,Psicontent 药方内容," +
+                    "Diatime 诊断时间, Psicost 价格 from Prescription";
+                    strcmd = string.Format(strcmd, textBox1.Text.Trim(), textBox8.Text.Trim(), textBox7.Text.Trim());
+                    SqlDataAdapter da = new SqlDataAdapter(strcmd, con);
+                    DataSet ds = new DataSet();
+                    da.Fill(ds);
+                    dataGridView2.DataSource = ds.Tables[0].DefaultView;
+                }
             }
         }
         private void button1_Click(object sender, EventArgs e)
         {
             using (SqlConnection con = new SqlConnection(strcon))
             {
-                string strcmd = "select * from Patient where Pname='{0}';";
-                strcmd = string.Format(strcmd,textBox1.Text.Trim());
-                SqlCommand com = new SqlCommand(strcmd, con);
-                SqlDataReader read = com.ExecuteReader();
-                read.Read();
-                textBox2.Text = read["Psex"].ToString();
-                textBox3.Text = read["Page"].ToString();
-                textBox4.Text = read["Birthdate"].ToString();
-                textBox5.Text = read["Pphone"].ToString();
-                textBox6.Text = read["Paddress"].ToString();
-
-                string strcmd1 = "select * from Preinquiry where Pname='{0}';";
-                strcmd = string.Format(strcmd1, textBox1.Text.Trim());
-                SqlCommand com1 = new SqlCommand(strcmd1, con);
-                SqlDataReader read1 = com1.ExecuteReader();
-                read1.Read();
-                richTextBox1.Text= read["Sichis"].ToString();
+                con.Open();
+                if (con.State == ConnectionState.Open)
+                {
+                    string strcmd = "select * from Patient where Pname='{0}';";
+                    strcmd = string.Format(strcmd, textBox1.Text.Trim());
+                    SqlCommand com = new SqlCommand(strcmd, con);
+                    SqlDataReader read = com.ExecuteReader();
+                    read.Read();
+                    textBox2.Text = read["Psex"].ToString();
+                    textBox3.Text = read["Page"].ToString();
+                    textBox4.Text = read["Birthdate"].ToString();
+                    textBox5.Text = read["Pphone"].ToString();
+                    textBox6.Text = read["Paddress"].ToString();
+                }
+            }
+            using (SqlConnection con = new SqlConnection(strcon))
+            {
+                con.Open();
+                if (con.State == ConnectionState.Open)
+                {
+                    string strcmd1 = "select * from Preinquiry where Pname='{0}';";
+                    strcmd1 = string.Format(strcmd1, textBox1.Text.Trim());
+                    SqlCommand com1 = new SqlCommand(strcmd1, con);
+                    SqlDataReader read1 = com1.ExecuteReader();
+                    if (read1.Read())
+                    {
+                        richTextBox1.Text = read1["Sichis"].ToString();
+                    }
+                }
             }
         }
     }
