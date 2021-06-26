@@ -35,7 +35,7 @@ namespace 门诊收费系统
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            string strcon = "server=DESKTOP-NT1HALM; database =门诊挂号收费系统;Integrated security=true";
+            string strcon = "data source=10.5.201.135 ; user id=admain; password=123456; initial catalog=门诊挂号收费系统";
             SqlConnection con = new()
             {
                 ConnectionString = strcon

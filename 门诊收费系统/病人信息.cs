@@ -66,18 +66,22 @@ namespace 门诊收费系统
 
         private void button3_Click(object sender, EventArgs e)
         {
-            using (SqlConnection con = new SqlConnection(strCon))
+            if (textBox7.Text != string.Empty)
             {
-                string strCmd = "select  PatientId 病人ID,Pname 病人姓名,Birthdate 出生日期,Page 年龄,Pphone 电话,Paddress 住址from from patient where Patientld={0}";
-               
-                strCmd = string.Format(strCmd, textBox7.Text);
-                
-                SqlDataAdapter da = new SqlDataAdapter(strCmd, con); 
-                DataSet ds = new DataSet();
-                da.Fill(ds);
-                dataGridView1.DataSource = ds.Tables[0].DefaultView;
+                using (SqlConnection con = new SqlConnection(strCon))
+                {
+                    string strCmd = "select  PatientId 病人ID,Pname 病人姓名,Birthdate 出生日期,Page 年龄,Pphone 电话,Paddress 住址from from patient where Patientld={0}";
 
+                    strCmd = string.Format(strCmd, textBox7.Text);
+
+                    SqlDataAdapter da = new SqlDataAdapter(strCmd, con);
+                    DataSet ds = new DataSet();
+                    da.Fill(ds);
+                    dataGridView1.DataSource = ds.Tables[0].DefaultView;
+
+                }
             }
+            else { MessageBox.Show("病人ID不能为空！"); }
         }
 
         private void button4_Click(object sender, EventArgs e)

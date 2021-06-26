@@ -36,10 +36,5 @@ namespace 门诊收费系统
         {
             this.Close();
         }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

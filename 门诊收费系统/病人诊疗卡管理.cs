@@ -69,26 +69,43 @@ namespace 门诊收费系统
 
         private void button7_Click(object sender, EventArgs e)
         {
-            using (SqlConnection con = new SqlConnection(strCon))
+            if (textBox1.Text != String.Empty)
             {
-                con.Open();
-                if (con.State == ConnectionState.Open)
+
+                using (SqlConnection con = new SqlConnection(strCon))
                 {
-                    string strCmd = "insert Patient values({0},'{1}','{2}','{3}',{4},'{5}','{6}');";
-                    strCmd = string.Format(strCmd, textBox1.Text, textBox2.Text, textBox3.Text, textBox5.Text, textBox4.Text, textBox6.Text, textBox7.Text);
-                    SqlCommand command = new SqlCommand(strCmd, con);
-                    command.ExecuteNonQuery();
-                    Random rm = new Random();
-                    int num = rm.Next(1000, 10000);
-                    string strCmd1 = "insert Medicalcard values({0},'{1}','{2}',);";
-                    strCmd = string.Format(strCmd1, num, textBox1.Text, textBox8.Text);
-                    panel1.Hide();
-                    MessageBox.Show("新建成功");
+                    con.Open();
+                    if (con.State == ConnectionState.Open)
+                    {
+                        string strCmd = "insert Patient values({0},'{1}','{2}','{3}',{4},'{5}','{6}');";
+                        strCmd = string.Format(strCmd, textBox1.Text, textBox2.Text, textBox3.Text, textBox5.Text, textBox4.Text, textBox6.Text, textBox7.Text);
+                        SqlCommand command = new SqlCommand(strCmd, con);
+                        command.ExecuteNonQuery();
+                        Random rm = new Random();
+                        int num = rm.Next(1000, 10000);
+                        string strCmd1 = "insert Medicalcard values({0},'{1}','{2}',);";
+                        strCmd = string.Format(strCmd1, num, textBox1.Text, textBox8.Text);
+                        MessageBox.Show("新建成功");
+
+                        string strCmd2 = "select  PatientId 病人ID,Pname 病人姓名,Birthdate 出生日期,Page 年龄,Pphone 电话,Paddress 住址from from patient where Patientld={0}";
+
+                        strCmd = string.Format(strCmd2, textBox7.Text);
+
+                        SqlDataAdapter da = new SqlDataAdapter(strCmd, con);
+                        DataSet ds = new DataSet();
+                        da.Fill(ds);
+                        dataGridView1.DataSource = ds.Tables[0].DefaultView;
 
 
 
 
+
+                    }
                 }
+            }
+            else
+            {
+                MessageBox.Show("病人ID不能为空！");
             }
         }
 
@@ -153,6 +170,11 @@ namespace 门诊收费系统
         private void button9_Click(object sender, EventArgs e)
         {
             panel2.Hide();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

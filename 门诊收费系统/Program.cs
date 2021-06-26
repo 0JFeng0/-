@@ -18,7 +18,7 @@ namespace 门诊收费系统
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new 病人诊疗卡管理());
+            Application.Run(new 查询统计主页面 ());
         }
     }
 }
