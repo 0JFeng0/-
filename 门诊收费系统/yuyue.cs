@@ -46,5 +46,10 @@ namespace 门诊收费系统
                 }
             }
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

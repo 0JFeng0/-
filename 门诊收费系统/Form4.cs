@@ -438,6 +438,7 @@ namespace 门诊收费系统
 
             f5.label3.Text =textBox2.Text;
             f5.label4.Text = comboBox5.Text;
+            f5.label10.Text = DateTime.Now.ToShortTimeString();
 
         }
 

@@ -31,6 +31,7 @@ namespace 门诊收费系统
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.d4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.d1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -43,15 +44,16 @@ namespace 门诊收费系统
             this.d5 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.label10 = new System.Windows.Forms.Label();
+            this.time = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.d4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -66,10 +68,10 @@ namespace 门诊收费系统
             this.tableLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 143F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 185F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 213F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 205F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 195F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 218F));
             this.tableLayoutPanel1.Controls.Add(this.d4, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.d1, 1, 0);
@@ -83,24 +85,36 @@ namespace 门诊收费系统
             this.tableLayoutPanel1.Controls.Add(this.d5, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label11, 2, 1);
             this.tableLayoutPanel1.Cursor = System.Windows.Forms.Cursors.HSplit;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(53, 28);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(48, 41);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 84F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 81F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 113F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(736, 265);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(895, 356);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.TabStop = true;
+            // 
+            // d4
+            // 
+            this.d4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.d4.AutoSize = true;
+            this.d4.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.d4.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.d4.Location = new System.Drawing.Point(768, 186);
+            this.d4.Name = "d4";
+            this.d4.Size = new System.Drawing.Size(34, 23);
+            this.d4.TabIndex = 4;
+            this.d4.Text = "d4";
             // 
             // label5
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label5.Location = new System.Drawing.Point(21, 37);
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label5.Location = new System.Drawing.Point(56, 59);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(102, 23);
             this.label5.TabIndex = 0;
@@ -112,7 +126,7 @@ namespace 门诊收费系统
             this.d1.AutoSize = true;
             this.d1.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.d1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.d1.Location = new System.Drawing.Point(220, 37);
+            this.d1.Location = new System.Drawing.Point(300, 59);
             this.d1.Name = "d1";
             this.d1.Size = new System.Drawing.Size(34, 23);
             this.d1.TabIndex = 1;
@@ -123,8 +137,8 @@ namespace 门诊收费系统
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label7.Location = new System.Drawing.Point(384, 37);
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label7.Location = new System.Drawing.Point(497, 59);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(102, 23);
             this.label7.TabIndex = 2;
@@ -136,7 +150,7 @@ namespace 门诊收费系统
             this.d3.AutoSize = true;
             this.d3.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.d3.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.d3.Location = new System.Drawing.Point(620, 37);
+            this.d3.Location = new System.Drawing.Point(768, 59);
             this.d3.Name = "d3";
             this.d3.Size = new System.Drawing.Size(34, 23);
             this.d3.TabIndex = 3;
@@ -147,8 +161,8 @@ namespace 门诊收费系统
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label9.Location = new System.Drawing.Point(21, 128);
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label9.Location = new System.Drawing.Point(56, 186);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(102, 23);
             this.label9.TabIndex = 4;
@@ -160,7 +174,7 @@ namespace 门诊收费系统
             this.d2.AutoSize = true;
             this.d2.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.d2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.d2.Location = new System.Drawing.Point(220, 128);
+            this.d2.Location = new System.Drawing.Point(300, 186);
             this.d2.Name = "d2";
             this.d2.Size = new System.Drawing.Size(34, 23);
             this.d2.TabIndex = 5;
@@ -171,8 +185,8 @@ namespace 门诊收费系统
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label15.Location = new System.Drawing.Point(384, 212);
+            this.label15.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label15.Location = new System.Drawing.Point(497, 293);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(102, 23);
             this.label15.TabIndex = 10;
@@ -183,8 +197,8 @@ namespace 门诊收费系统
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label13.Location = new System.Drawing.Point(21, 212);
+            this.label13.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label13.Location = new System.Drawing.Point(56, 293);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(102, 23);
             this.label13.TabIndex = 8;
@@ -196,7 +210,7 @@ namespace 门诊收费系统
             this.d6.AutoSize = true;
             this.d6.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.d6.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.d6.Location = new System.Drawing.Point(620, 212);
+            this.d6.Location = new System.Drawing.Point(768, 293);
             this.d6.Name = "d6";
             this.d6.Size = new System.Drawing.Size(34, 23);
             this.d6.TabIndex = 11;
@@ -208,7 +222,7 @@ namespace 门诊收费系统
             this.d5.AutoSize = true;
             this.d5.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.d5.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.d5.Location = new System.Drawing.Point(220, 212);
+            this.d5.Location = new System.Drawing.Point(300, 293);
             this.d5.Name = "d5";
             this.d5.Size = new System.Drawing.Size(34, 23);
             this.d5.TabIndex = 9;
@@ -219,8 +233,8 @@ namespace 门诊收费系统
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label11.Location = new System.Drawing.Point(384, 128);
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label11.Location = new System.Drawing.Point(497, 186);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(102, 23);
             this.label11.TabIndex = 6;
@@ -237,12 +251,15 @@ namespace 门诊收费系统
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.splitContainer1.Panel1.Controls.Add(this.label10);
+            this.splitContainer1.Panel1.Controls.Add(this.time);
             this.splitContainer1.Panel1.Controls.Add(this.label8);
             this.splitContainer1.Panel1.Controls.Add(this.label4);
             this.splitContainer1.Panel1.Controls.Add(this.label3);
             this.splitContainer1.Panel1.Controls.Add(this.label2);
             this.splitContainer1.Panel1.Controls.Add(this.label1);
             this.splitContainer1.Panel1.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.splitContainer1.Panel1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             // 
             // splitContainer1.Panel2
             // 
@@ -250,9 +267,52 @@ namespace 门诊收费系统
             this.splitContainer1.Panel2.Controls.Add(this.groupBox1);
             this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel1);
             this.splitContainer1.Panel2.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.splitContainer1.Size = new System.Drawing.Size(818, 499);
-            this.splitContainer1.SplitterDistance = 106;
+            this.splitContainer1.Size = new System.Drawing.Size(993, 672);
+            this.splitContainer1.SplitterDistance = 142;
             this.splitContainer1.TabIndex = 1;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(89, 74);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(57, 24);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "时间2";
+            // 
+            // time
+            // 
+            this.time.AutoSize = true;
+            this.time.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.time.Location = new System.Drawing.Point(12, 80);
+            this.time.Name = "time";
+            this.time.Size = new System.Drawing.Size(82, 15);
+            this.time.TabIndex = 7;
+            this.time.Text = "诊断时间：";
+            this.time.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(625, 77);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(82, 15);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "预约时间：";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(704, 71);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(57, 24);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "时间1";
             // 
             // label3
             // 
@@ -292,15 +352,15 @@ namespace 门诊收费系统
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox1.Location = new System.Drawing.Point(0, 312);
+            this.groupBox1.Location = new System.Drawing.Point(0, 419);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(829, 75);
+            this.groupBox1.Size = new System.Drawing.Size(993, 83);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(468, 24);
+            this.button1.Location = new System.Drawing.Point(594, 27);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 29);
             this.button1.TabIndex = 3;
@@ -310,7 +370,7 @@ namespace 门诊收费系统
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(278, 24);
+            this.button2.Location = new System.Drawing.Point(342, 27);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 29);
             this.button2.TabIndex = 2;
@@ -318,44 +378,11 @@ namespace 门诊收费系统
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(704, 71);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 24);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "时间";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(625, 77);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(82, 15);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "预约时间：";
-            // 
-            // d4
-            // 
-            this.d4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.d4.AutoSize = true;
-            this.d4.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.d4.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.d4.Location = new System.Drawing.Point(620, 128);
-            this.d4.Name = "d4";
-            this.d4.Size = new System.Drawing.Size(34, 23);
-            this.d4.TabIndex = 4;
-            this.d4.Text = "d4";
-            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(818, 499);
+            this.ClientSize = new System.Drawing.Size(993, 672);
             this.Controls.Add(this.splitContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form5";
@@ -396,5 +423,7 @@ namespace 门诊收费系统
         public System.Windows.Forms.Label d4;
         private System.Windows.Forms.Label label8;
         public System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label time;
+        public System.Windows.Forms.Label label10;
     }
 }

@@ -24,7 +24,7 @@ namespace 门诊收费系统
         {
             using (SqlConnection con = new SqlConnection(strCon))
             {
-                string strCmd = "select * from Patient";
+                string strCmd = "select  PatientId 病人ID,Pname 病人姓名,Birthdate 出生日期,Page 年龄,Pphone 电话, Paddress 住址 from Patient";
                 SqlDataAdapter da = new SqlDataAdapter(strCmd, con);
                 DataSet ds = new DataSet();
                 da.Fill(ds);
@@ -33,18 +33,7 @@ namespace 门诊收费系统
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            using (SqlConnection con = new SqlConnection(strCon))
-            {
-                con.Open();
-                if (con.State == ConnectionState.Open)
-                {
-                    string strCmd = "insert Patient values({0},'{1}','{2}','{3}',{4},'{5}','{6}');";
-                    strCmd = string.Format(strCmd, textBox7.Text, textBox1.Text, textBox6.Text, textBox4.Text, textBox2.Text, textBox5.Text, textBox3.Text);
-                    SqlCommand command = new SqlCommand(strCmd, con);
-                    command.ExecuteNonQuery();
-
-                }
-            }
+            
         }
 
 
@@ -66,6 +55,8 @@ namespace 门诊收费系统
 
                 }
             }
+            病人诊疗卡管理 z = new 病人诊疗卡管理();
+            z.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -77,7 +68,7 @@ namespace 门诊收费系统
         {
             using (SqlConnection con = new SqlConnection(strCon))
             {
-                string strCmd = "select * from patient where Patientld={0}";
+                string strCmd = "select  PatientId 病人ID,Pname 病人姓名,Birthdate 出生日期,Page 年龄,Pphone 电话,Paddress 住址from from patient where Patientld={0}";
                
                 strCmd = string.Format(strCmd, textBox7.Text);
                 
@@ -106,11 +97,14 @@ namespace 门诊收费系统
 
                 }
             }
+            病人诊疗卡管理 z = new 病人诊疗卡管理();
+            z.Show();
         }
 
         private void 病人信息_Load(object sender, EventArgs e)
         {
             Init();
+
         }
     }
 }
