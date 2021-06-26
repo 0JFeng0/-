@@ -68,6 +68,8 @@ namespace 门诊收费系统
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -93,7 +95,7 @@ namespace 门诊收费系统
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(150, 5);
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1576, 978);
+            this.tabControl1.Size = new System.Drawing.Size(1771, 978);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -103,7 +105,7 @@ namespace 门诊收费系统
             this.tabPage1.Location = new System.Drawing.Point(4, 44);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1568, 930);
+            this.tabPage1.Size = new System.Drawing.Size(1763, 930);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "病人诊断记录管理";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -126,7 +128,7 @@ namespace 门诊收费系统
             // 
             this.splitContainer1.Panel2.AutoScroll = true;
             this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel3);
-            this.splitContainer1.Size = new System.Drawing.Size(1562, 924);
+            this.splitContainer1.Size = new System.Drawing.Size(1757, 924);
             this.splitContainer1.SplitterDistance = 602;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -142,7 +144,7 @@ namespace 门诊收费系统
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1562, 602);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1757, 602);
             this.tableLayoutPanel2.TabIndex = 24;
             // 
             // groupBox1
@@ -165,7 +167,7 @@ namespace 门诊收费系统
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(775, 596);
+            this.groupBox1.Size = new System.Drawing.Size(872, 596);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             // 
@@ -305,6 +307,8 @@ namespace 门诊收费系统
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.button4);
+            this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.textBox10);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.label12);
@@ -319,9 +323,9 @@ namespace 门诊收费系统
             this.groupBox2.Controls.Add(this.textBox7);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(784, 3);
+            this.groupBox2.Location = new System.Drawing.Point(881, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(775, 596);
+            this.groupBox2.Size = new System.Drawing.Size(873, 596);
             this.groupBox2.TabIndex = 23;
             this.groupBox2.TabStop = false;
             // 
@@ -454,7 +458,7 @@ namespace 门诊收费系统
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(2361, 764);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(2556, 764);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // tableLayoutPanel3
@@ -469,7 +473,7 @@ namespace 门诊收费系统
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1562, 318);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1757, 318);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // dataGridView1
@@ -482,7 +486,7 @@ namespace 门诊收费系统
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(775, 312);
+            this.dataGridView1.Size = new System.Drawing.Size(872, 312);
             this.dataGridView1.TabIndex = 0;
             // 
             // dataGridView2
@@ -491,11 +495,11 @@ namespace 门诊收费系统
             this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(784, 3);
+            this.dataGridView2.Location = new System.Drawing.Point(881, 3);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 29;
-            this.dataGridView2.Size = new System.Drawing.Size(775, 312);
+            this.dataGridView2.Size = new System.Drawing.Size(873, 312);
             this.dataGridView2.TabIndex = 1;
             // 
             // tabPage3
@@ -508,11 +512,33 @@ namespace 门诊收费系统
             this.tabPage3.Text = "病人电子病历";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Peru;
+            this.button3.Location = new System.Drawing.Point(28, 512);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(152, 59);
+            this.button3.TabIndex = 28;
+            this.button3.Text = "刷新时间";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Peru;
+            this.button4.Location = new System.Drawing.Point(698, 512);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(152, 59);
+            this.button4.TabIndex = 29;
+            this.button4.Text = "清空记录";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1576, 978);
+            this.ClientSize = new System.Drawing.Size(1771, 978);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.HelpButton = true;
@@ -579,5 +605,7 @@ namespace 门诊收费系统
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
     }
 }
