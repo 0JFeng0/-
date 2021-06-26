@@ -63,6 +63,17 @@ namespace 门诊收费系统.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap aHR0cDovL3d3dy55M3EubmV0L3FmeS1jb250ZW50L3VwbG9hZHMvMjAyMC8wOS9hNzg0MWRkODI5NDNkOTZkZDBiNDRlNmJiOTM5NWJhNy0yMTB4MjEwLnBuZw_p_p100_p_3D_p_p100_p_3D {
+            get {
+                object obj = ResourceManager.GetObject("aHR0cDovL3d3dy55M3EubmV0L3FmeS1jb250ZW50L3VwbG9hZHMvMjAyMC8wOS9hNzg0MWRkODI5NDNkO" +
+                        "TZkZDBiNDRlNmJiOTM5NWJhNy0yMTB4MjEwLnBuZw_p_p100_p_3D_p_p100_p_3D", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 图片10 {
             get {
                 object obj = ResourceManager.GetObject("图片10", resourceCulture);
@@ -93,6 +104,36 @@ namespace 门诊收费系统.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap 图片13 {
+            get {
+                object obj = ResourceManager.GetObject("图片13", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 图片14 {
+            get {
+                object obj = ResourceManager.GetObject("图片14", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 图片15 {
+            get {
+                object obj = ResourceManager.GetObject("图片15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 图片17 {
             get {
                 object obj = ResourceManager.GetObject("图片17", resourceCulture);
@@ -103,9 +144,29 @@ namespace 门诊收费系统.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap 图片171 {
+            get {
+                object obj = ResourceManager.GetObject("图片171", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 图片18 {
             get {
                 object obj = ResourceManager.GetObject("图片18", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 图片181 {
+            get {
+                object obj = ResourceManager.GetObject("图片181", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,6 +247,16 @@ namespace 门诊收费系统.Properties {
         internal static System.Drawing.Bitmap 返回2 {
             get {
                 object obj = ResourceManager.GetObject("返回2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 返回3 {
+            get {
+                object obj = ResourceManager.GetObject("返回3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
