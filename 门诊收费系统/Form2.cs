@@ -48,27 +48,60 @@ namespace 门诊收费系统
             if(MessageBox.Show("病人诊断记录一经提交无法修改，确认提交？", "提示", MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Question, MessageBoxDefaultButton.Button2)==DialogResult.OK)
             {
-                //向诊断记录表中插入信息
                 using (SqlConnection con = new SqlConnection(strcon))
                 {
                     con.Open();
                     if (con.State == ConnectionState.Open)
                     {
-                        string strcmd = "insert into Diagnosis values('{0}','{1}','{2}','{3}','{4}','{5}')";
-                        strcmd = string.Format(strcmd,textBox8.Text.Trim(), textBox1.Text.Trim(), richTextBox1.Text.Trim(), 
-                            richTextBox2.Text.Trim(), textBox9.Text.Trim(),textBox7.Text.Trim());
-                        SqlCommand com = new SqlCommand(strcmd, con);
-                        com.ExecuteNonQuery();
+                        string strcmd = "select * from Diagnosis where Diatime='{0}' ";
+                        strcmd = string.Format(strcmd, textBox7.Text);
+                        SqlDataAdapter da = new SqlDataAdapter(strcmd, con);
+                        DataSet ds = new DataSet();
+                        da.Fill(ds);
+                       if(ds.Tables[0].Rows.Count==0)
+                        {
+                            //向诊断记录表中插入信息
+                            string strcmd1 = "insert into Diagnosis values('{0}','{1}','{2}','{3}','{4}','{5}')";
+                            strcmd1 = string.Format(strcmd1, textBox8.Text.Trim(), textBox1.Text.Trim(), richTextBox1.Text.Trim(),
+                                richTextBox2.Text.Trim(), textBox9.Text.Trim(), textBox7.Text.Trim());
+                            SqlCommand com1 = new SqlCommand(strcmd1, con);
+                            com1.ExecuteNonQuery();
+
+                            //向处方记录表中插入信息
+                            string strcmd2 = "insert into Prescription values('{0}','{1}','{2}','{3}','{4}')";
+                            strcmd2 = string.Format(strcmd2, textBox9.Text.Trim(), textBox8.Text.Trim(), richTextBox3.Text.Trim(),
+                                textBox7.Text.Trim(), textBox10.Text.Trim());
+                            SqlCommand com2 = new SqlCommand(strcmd2, con);
+                            com2.ExecuteNonQuery();
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("不可重复增加诊断记录!", "提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                     }
                 }
+                //向诊断记录表中插入信息
+                //using (SqlConnection con = new SqlConnection(strcon))
+                //{
+                //    con.Open();
+                //    if (con.State == ConnectionState.Open)
+                //    {
+                //        string strcmd = "insert into Diagnosis values('{0}','{1}','{2}','{3}','{4}','{5}')";
+                //        strcmd = string.Format(strcmd,textBox8.Text.Trim(), textBox1.Text.Trim(), richTextBox1.Text.Trim(), 
+                //            richTextBox2.Text.Trim(), textBox9.Text.Trim(),textBox7.Text.Trim());
+                //        SqlCommand com = new SqlCommand(strcmd, con);
+                //        com.ExecuteNonQuery();
+                //    }
+                //}
                 using (SqlConnection con = new SqlConnection(strcon))
                 {
                     con.Open();
                     if (con.State == ConnectionState.Open)
                     {
                         string strcmd = "select Pname 患者姓名 ,Dname 诊断医师 ,Sichis 过往病史,Disease 诊断病症," +
-                        "Psiname 药方名称,Diatime 诊断时间  from Diagnosis ";
-                        strcmd = string.Format(strcmd, textBox1.Text.Trim(), textBox8.Text.Trim(), textBox7.Text.Trim());
+                        "Psiname 药方名称,Diatime 诊断时间  from Diagnosis where Diatime='{0}' ";
+                        strcmd = string.Format(strcmd,textBox7.Text);
                         SqlDataAdapter da = new SqlDataAdapter(strcmd, con);
                         DataSet ds = new DataSet();
                         da.Fill(ds);
@@ -76,26 +109,26 @@ namespace 门诊收费系统
                     }
                 }
                 //向处方记录表中插入信息
-                using (SqlConnection con = new SqlConnection(strcon))
-                {
-                    con.Open();
-                    if (con.State == ConnectionState.Open)
-                    {
-                        string strcmd = "insert into Prescription values('{0}','{1}','{2}','{3}','{4}')";
-                        strcmd = string.Format(strcmd, textBox9.Text.Trim(), textBox8.Text.Trim(), richTextBox3.Text.Trim(),
-                            textBox7.Text.Trim(), textBox10.Text.Trim());
-                        SqlCommand com = new SqlCommand(strcmd, con);
-                        com.ExecuteNonQuery();
-                    }
-                }
+                //using (SqlConnection con = new SqlConnection(strcon))
+                //{
+                //    con.Open();
+                //    if (con.State == ConnectionState.Open)
+                //    {
+                //        string strcmd = "insert into Prescription values('{0}','{1}','{2}','{3}','{4}')";
+                //        strcmd = string.Format(strcmd, textBox9.Text.Trim(), textBox8.Text.Trim(), richTextBox3.Text.Trim(),
+                //            textBox7.Text.Trim(), textBox10.Text.Trim());
+                //        SqlCommand com = new SqlCommand(strcmd, con);
+                //        com.ExecuteNonQuery();
+                //    }
+                //}
                 using (SqlConnection con = new SqlConnection(strcon))
                 {
                     con.Open();
                     if (con.State == ConnectionState.Open)
                     {
                         string strcmd = "select Psiname 药方名称 ,Dname 开方医生 ,Psicontent 药方内容," +
-                        "Diatime 诊断时间, Psicost 价格 from Prescription";
-                        strcmd = string.Format(strcmd, textBox1.Text.Trim(), textBox8.Text.Trim(), textBox7.Text.Trim());
+                        "Diatime 诊断时间, Psicost 价格 from Prescription  where Diatime='{0}' ";
+                        strcmd = string.Format(strcmd,textBox7.Text);
                         SqlDataAdapter da = new SqlDataAdapter(strcmd, con);
                         DataSet ds = new DataSet();
                         da.Fill(ds);

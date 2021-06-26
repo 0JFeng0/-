@@ -102,7 +102,7 @@ namespace 门诊收费系统
             this.tabPage1.Controls.Add(this.splitContainer1);
             this.tabPage1.Location = new System.Drawing.Point(4, 44);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(1568, 930);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "病人诊断记录管理";
@@ -502,7 +502,7 @@ namespace 门诊收费系统
             // 
             this.tabPage3.Location = new System.Drawing.Point(4, 44);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(1568, 930);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "病人电子病历";
