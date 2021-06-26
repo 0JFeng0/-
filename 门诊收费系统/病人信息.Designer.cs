@@ -108,11 +108,11 @@ namespace 门诊收费系统
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(32, 16);
+            this.label7.Location = new System.Drawing.Point(12, 16);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(23, 20);
+            this.label7.Size = new System.Drawing.Size(54, 20);
             this.label7.TabIndex = 25;
-            this.label7.Text = "id";
+            this.label7.Text = "病人ID";
             // 
             // textBox6
             // 
@@ -190,7 +190,7 @@ namespace 门诊收费系统
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 57);
+            this.label5.Location = new System.Drawing.Point(12, 57);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(39, 20);
             this.label5.TabIndex = 8;
@@ -222,11 +222,11 @@ namespace 门诊收费系统
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(1, 99);
+            this.label3.Location = new System.Drawing.Point(12, 99);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 20);
+            this.label3.Size = new System.Drawing.Size(39, 20);
             this.label3.TabIndex = 4;
-            this.label3.Text = "家庭地址";
+            this.label3.Text = "住址";
             // 
             // textBox2
             // 
@@ -254,7 +254,7 @@ namespace 门诊收费系统
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(210, 16);
+            this.label1.Location = new System.Drawing.Point(212, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 20);
             this.label1.TabIndex = 0;
@@ -265,6 +265,8 @@ namespace 门诊收费系统
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.BackgroundImage = global::门诊收费系统.Properties.Resources._16pic_2154555_b;
+            this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox1.Location = new System.Drawing.Point(3, 0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1016, 172);
@@ -291,7 +293,7 @@ namespace 门诊收费系统
             this.ClientSize = new System.Drawing.Size(1019, 535);
             this.Controls.Add(this.splitContainer1);
             this.Name = "病人信息";
-            this.Text = "Form1";
+            this.Text = "病人信息";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.病人信息_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);

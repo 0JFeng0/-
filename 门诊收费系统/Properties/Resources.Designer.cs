@@ -63,6 +63,16 @@ namespace 门诊收费系统.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap _16pic_2154555_b {
+            get {
+                object obj = ResourceManager.GetObject("16pic_2154555_b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap aHR0cDovL3d3dy55M3EubmV0L3FmeS1jb250ZW50L3VwbG9hZHMvMjAyMC8wOS9hNzg0MWRkODI5NDNkOTZkZDBiNDRlNmJiOTM5NWJhNy0yMTB4MjEwLnBuZw_p_p100_p_3D_p_p100_p_3D {
             get {
                 object obj = ResourceManager.GetObject("aHR0cDovL3d3dy55M3EubmV0L3FmeS1jb250ZW50L3VwbG9hZHMvMjAyMC8wOS9hNzg0MWRkODI5NDNkO" +
