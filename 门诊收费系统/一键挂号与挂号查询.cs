@@ -66,6 +66,12 @@ namespace 门诊收费系统
                 dataGridView1.DataSource = ds.Tables[0].DefaultView;
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new 挂号管理主页面().Show();
+        }
     }
 }
 

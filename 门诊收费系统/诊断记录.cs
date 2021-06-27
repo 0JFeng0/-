@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace 门诊收费系统
 {
-    public partial class 诊断信息 : Form
+    public partial class 诊断记录 : Form
     {
-        public 诊断信息()
+        public 诊断记录()
         {
             InitializeComponent();
         }
@@ -210,6 +210,12 @@ namespace 门诊收费系统
             richTextBox1.Text = "";
             richTextBox2.Text = "";
             richTextBox3.Text = "";
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new 登录().Show();
         }
     }
 }

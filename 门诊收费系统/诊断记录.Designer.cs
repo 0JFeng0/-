@@ -1,7 +1,7 @@
 ﻿
 namespace 门诊收费系统
 {
-    partial class 诊断信息
+    partial class 诊断记录
     {
         /// <summary>
         /// Required designer variable.
@@ -50,6 +50,8 @@ namespace 门诊收费系统
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -68,8 +70,7 @@ namespace 门诊收费系统
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -82,6 +83,7 @@ namespace 门诊收费系统
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -329,6 +331,28 @@ namespace 门诊收费系统
             this.groupBox2.TabIndex = 23;
             this.groupBox2.TabStop = false;
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Peru;
+            this.button4.Location = new System.Drawing.Point(698, 512);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(152, 59);
+            this.button4.TabIndex = 29;
+            this.button4.Text = "清空记录";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Peru;
+            this.button3.Location = new System.Drawing.Point(28, 512);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(152, 59);
+            this.button3.TabIndex = 28;
+            this.button3.Text = "刷新时间";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // textBox10
             // 
             this.textBox10.Location = new System.Drawing.Point(533, 193);
@@ -448,11 +472,11 @@ namespace 门诊收费系统
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 2361F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 2556F));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(-19661, -19444);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
@@ -504,37 +528,26 @@ namespace 门诊收费系统
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.button5);
             this.tabPage3.Location = new System.Drawing.Point(4, 44);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1568, 930);
+            this.tabPage3.Size = new System.Drawing.Size(1763, 930);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "病人电子病历";
+            this.tabPage3.Text = "个人中心";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // button5
             // 
-            this.button3.BackColor = System.Drawing.Color.Peru;
-            this.button3.Location = new System.Drawing.Point(28, 512);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(152, 59);
-            this.button3.TabIndex = 28;
-            this.button3.Text = "刷新时间";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button5.Location = new System.Drawing.Point(624, 240);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(160, 58);
+            this.button5.TabIndex = 0;
+            this.button5.Text = "退出登录";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Peru;
-            this.button4.Location = new System.Drawing.Point(698, 512);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(152, 59);
-            this.button4.TabIndex = 29;
-            this.button4.Text = "清空记录";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // Form2
+            // 诊断记录
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -542,7 +555,7 @@ namespace 门诊收费系统
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.HelpButton = true;
-            this.Name = "Form2";
+            this.Name = "诊断记录";
             this.Text = "诊断记录";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -560,6 +573,7 @@ namespace 门诊收费系统
             this.tableLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -607,5 +621,6 @@ namespace 门诊收费系统
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button5;
     }
 }

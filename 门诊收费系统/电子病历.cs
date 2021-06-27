@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace 门诊收费系统
 {
-    public partial class Form3 : Form
+    public partial class 电子病历 : Form
     {
         internal object p;
 
-        public Form3()
+        public 电子病历()
         {
             InitializeComponent();
         }

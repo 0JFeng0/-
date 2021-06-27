@@ -176,5 +176,11 @@ namespace 门诊收费系统
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new 挂号员主界面().Show();
+        }
     }
 }

@@ -20,13 +20,25 @@ namespace 门诊收费系统
 
         private void button3_Click(object sender, EventArgs e)
         {
-            一键挂号与挂号查询 form5 = new 一键挂号与挂号查询();
-            form5.Show();
+            this.Close();
+            new 一键挂号与挂号查询().Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new 挂号记录表().Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new 挂号员主界面().Show();
         }
     }
 }

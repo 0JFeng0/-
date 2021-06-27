@@ -1,7 +1,7 @@
 ﻿
 namespace 门诊收费系统
 {
-    partial class yuyue
+    partial class 病人预约
     {
         /// <summary>
         /// Required designer variable.
@@ -56,7 +56,7 @@ namespace 门诊收费系统
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(189, 499);
+            this.groupBox1.Size = new System.Drawing.Size(137, 499);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -72,11 +72,12 @@ namespace 门诊收费系统
             this.button6.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button6.Location = new System.Drawing.Point(0, 453);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(189, 40);
+            this.button6.Size = new System.Drawing.Size(219, 40);
             this.button6.TabIndex = 6;
             this.button6.Text = "页面返回";
             this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // pictureBox1
             // 
@@ -84,7 +85,7 @@ namespace 门诊收费系统
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(189, 141);
+            this.pictureBox1.Size = new System.Drawing.Size(103, 93);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -162,7 +163,7 @@ namespace 门诊收费系统
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(575, 11);
+            this.button1.Location = new System.Drawing.Point(622, 11);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 29);
             this.button1.TabIndex = 12;
@@ -176,12 +177,12 @@ namespace 门诊收费系统
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(190, 453);
+            this.panel1.Location = new System.Drawing.Point(143, 453);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(680, 46);
+            this.panel1.Size = new System.Drawing.Size(727, 46);
             this.panel1.TabIndex = 13;
             // 
-            // yuyue
+            // 病人预约
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -197,7 +198,7 @@ namespace 门诊收费系统
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "yuyue";
+            this.Name = "病人预约";
             this.Text = "yuyue";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.yuyue_Load);

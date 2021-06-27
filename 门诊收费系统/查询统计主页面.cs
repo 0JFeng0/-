@@ -42,12 +42,23 @@ namespace 门诊收费系统
 
         private void button4_Click(object sender, EventArgs e)
         {
-            复诊率统计查询 form3 = new 复诊率统计查询();
-            form3.Show();
+            tabControl1.Visible = false;
+
+            richTextBox1.Visible = true;
+            string strCon = "data source=10.5.201.135; user id=admain;password=123456;initial catalog=门诊挂号收费系统";
+            using (SqlConnection con = new SqlConnection(strCon))
+            {
+                string strCmd = "select 初诊次数,复诊次数,总诊断次数,ROUND(CONVERT(DECIMAL(18, 2), 初诊次数) / 总诊断次数 , 4) AS 初诊率,ROUND(CONVERT(DECIMAL(18, 2), 复诊次数) / 总诊断次数 , 4) AS 复诊率 from (select Count(Clcsort) from Registration where Clcsort = '初诊') AS Reg1(初诊次数),(select Count(Clcsort) from Registration where Clcsort = '复诊') AS Reg2(复诊次数),(select Count(*) from Registration) AS Reg(总诊断次数) ";
+                SqlDataAdapter da = new SqlDataAdapter(strCmd, con);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                dataGridView1.DataSource = ds.Tables[0].DefaultView;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            panel1.Visible = true;
             string strCon = "data source=10.5.201.135; user id=admain;password=123456;initial catalog=门诊挂号收费系统";
             using (SqlConnection con = new SqlConnection(strCon))
             {
@@ -84,8 +95,31 @@ namespace 门诊收费系统
 
         private void button3_Click(object sender, EventArgs e)
         {
-            工作量查询 form2 = new 工作量查询();
-            form2.Show();
+            panel1.Visible = false;
+            tabControl1.Visible=true;
+
+            string strCon = "data source=10.5.201.135; user id=admain;password=123456;initial catalog=门诊挂号收费系统";
+            using (SqlConnection con = new SqlConnection(strCon))
+            {
+                if (tabControl1.SelectedIndex == 0)
+                {
+                    string strCmd = "select Staffid,Staffname,Logindify,Workload from Staff where Logindify='挂号员' ";
+                    SqlDataAdapter da = new SqlDataAdapter(strCmd, con);
+                    DataSet ds = new DataSet();
+                    da.Fill(ds);
+                    dataGridView1.DataSource = ds.Tables[0].DefaultView;
+                }
+                else if (tabControl1.SelectedIndex == 1)
+                {
+                    string strCmd2 = "select Staffid,Staffname,Logindify,Workload  from Staff where Logindify='医生' ";
+                    SqlDataAdapter da2 = new SqlDataAdapter(strCmd2, con);
+                    DataSet ds2 = new DataSet();
+                    da2.Fill(ds2);
+                    dataGridView2.DataSource = ds2.Tables[0].DefaultView;
+                }
+
+            }
+
 
         }
 
@@ -103,6 +137,11 @@ namespace 门诊收费系统
         {
             个人中心 form1 = new 个人中心();
             form1.Show();
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

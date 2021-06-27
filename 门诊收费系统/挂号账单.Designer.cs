@@ -1,7 +1,7 @@
 ﻿
 namespace 门诊收费系统
 {
-    partial class Form5
+    partial class 挂号账单
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace 门诊收费系统
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(挂号账单));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.d4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();

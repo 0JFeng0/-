@@ -1,7 +1,7 @@
 ﻿
 namespace 门诊收费系统
 {
-    partial class Form2
+    partial class 电子病历前
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace 门诊收费系统
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(电子病历前));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();

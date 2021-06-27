@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace 门诊收费系统
 {
-    public partial class Form4 : Form
+    public partial class 挂号记录表 : Form
     {
 
 
@@ -65,7 +65,7 @@ namespace 门诊收费系统
         }
 
 
-        public Form4()
+        public 挂号记录表()
         {
             InitializeComponent();
         }
@@ -87,6 +87,7 @@ namespace 门诊收费系统
         private void button4_Click(object sender, EventArgs e)
         {
             this.Close();
+            new 挂号管理主页面().Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -491,7 +492,7 @@ namespace 门诊收费系统
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form5 f5 = new Form5();
+            挂号账单 f5 = new 挂号账单();
 
             f5.Show();
 

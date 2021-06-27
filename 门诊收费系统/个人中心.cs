@@ -118,6 +118,12 @@ namespace 门诊收费系统
             }
             else { MessageBox.Show("原密码不能为空！"); }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new 登录().Show();
+        }
     }
 }
 

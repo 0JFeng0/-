@@ -12,12 +12,12 @@ using System.Windows.Forms;
 
 namespace 门诊收费系统
 {
-    public partial class Form2 : Form
+    public partial class 电子病历前 : Form
     {
 
         string strCon = "data source=10.5.201.135 ; user id=admain; password=123456; initial catalog=门诊挂号收费系统";
 
-        public Form2()
+        public 电子病历前()
         {
             InitializeComponent();
         }
@@ -79,7 +79,7 @@ namespace 门诊收费系统
 
             string name = dataGridView1.CurrentRow.Cells["Pname"].Value.ToString();
 
-            Form3 f3 = new Form3();
+            电子病历 f3 = new 电子病历();
 
             f3.Show();
 

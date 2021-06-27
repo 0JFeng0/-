@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace 门诊收费系统
 {
-    public partial class yuyue : Form
+    public partial class 病人预约 : Form
     {
         string strCon = "data source=10.5.201.135; user id=admain;password=123456;initial catalog=门诊挂号收费系统";
-        public yuyue()
+        public 病人预约()
         {
             InitializeComponent();
         }
@@ -50,6 +50,12 @@ namespace 门诊收费系统
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new 登录().Show();
         }
     }
 }

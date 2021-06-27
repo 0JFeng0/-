@@ -1,7 +1,7 @@
 ﻿
 namespace 门诊收费系统
 {
-    partial class Form4
+    partial class 挂号记录表
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace 门诊收费系统
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(挂号记录表));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();

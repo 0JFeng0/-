@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace 门诊收费系统
 {
-    public partial class Form5 : Form
+    public partial class 挂号账单 : Form
     {
-        public Form5()
+        public 挂号账单()
         {
             InitializeComponent();
         }

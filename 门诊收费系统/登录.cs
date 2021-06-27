@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace 门诊收费系统
 {
-    public partial class Form1 : Form
+    public partial class 登录 : Form
     {
-        public Form1()
+        public 登录()
         {
             InitializeComponent();
         }
@@ -56,28 +56,28 @@ namespace 门诊收费系统
                 {
                     //隐藏登录窗口,显示主窗口
                     this.Hide();
-                    new Form2().Show();
+                    new 诊断记录().Show();
                 }
                 else if (re.HasRows & comboBox1.Text.Trim() == "挂号员")
                 {
                     //隐藏登录窗口,显示主窗口
                     this.Hide();
-                    new Form3().Show();
+                    new 挂号员主界面().Show();
                 }
                 else if(re.HasRows & comboBox1.Text.Trim() == "系统管理员")
                 {
                     //隐藏登录窗口,显示主窗口
                     this.Hide();
-                    new Form4().Show();
+                    new 查询统计主页面().Show();
                 }
                 else
                 {
-                    MessageBox.Show("用户名或者密码不正确！");
+                    MessageBox.Show("用户名或者密码不正确！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
             {
-                MessageBox.Show("用户名或者密码不正确！");
+                MessageBox.Show("用户名或者密码不正确！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
         }
@@ -95,6 +95,17 @@ namespace 门诊收费系统
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked_1(object sender, ToolStripItemClickedEventArgs e)
+        {
+            this.Hide();
+            new 病人预约().Show();
         }
     }
 }
