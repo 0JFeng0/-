@@ -72,7 +72,7 @@ namespace 门诊收费系统
             this.button6.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button6.Location = new System.Drawing.Point(0, 453);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(219, 40);
+            this.button6.Size = new System.Drawing.Size(137, 40);
             this.button6.TabIndex = 6;
             this.button6.Text = "页面返回";
             this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -85,7 +85,7 @@ namespace 门诊收费系统
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(103, 93);
+            this.pictureBox1.Size = new System.Drawing.Size(137, 97);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -163,7 +163,7 @@ namespace 门诊收费系统
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(622, 11);
+            this.button1.Location = new System.Drawing.Point(629, 11);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 29);
             this.button1.TabIndex = 12;
@@ -177,9 +177,9 @@ namespace 门诊收费系统
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(143, 453);
+            this.panel1.Location = new System.Drawing.Point(136, 453);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(727, 46);
+            this.panel1.Size = new System.Drawing.Size(734, 46);
             this.panel1.TabIndex = 13;
             // 
             // 病人预约
@@ -199,7 +199,7 @@ namespace 门诊收费系统
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Name = "病人预约";
-            this.Text = "yuyue";
+            this.Text = "预问诊";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.yuyue_Load);
             this.groupBox1.ResumeLayout(false);
